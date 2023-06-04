@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        jdk 'java1.8.0_362'
+        jdk 'java1.8'
     }
     stages {
         stage('compile') {
@@ -39,7 +39,7 @@ pipeline {
         stage('codecoverage') {
 
            tools {
-              jdk 'java1.8.0_362'
+              jdk 'java1.8'
            }
 	         steps {
                 // step4
